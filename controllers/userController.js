@@ -252,7 +252,7 @@ const updateProfile = async (req, res, next) => {
         return next (new AppError("User doesn't exist!", 400));
     }
 
-    if(req.fullname){
+    if(fullname){
         user.fullname = fullname;
     }
 
